@@ -1,0 +1,82 @@
+"""Stock lists (copied from hello.ipynb). Edit here to change what gets tested."""
+from __future__ import annotations
+
+NIFTY_50 = ["ADANIENT.NS", "ADANIPORTS.NS", "APOLLOHOSP.NS", "ASIANPAINT.NS", "AXISBANK.NS", "BAJAJ-AUTO.NS", "BAJFINANCE.NS", "BAJAJFINSV.NS", "BEL.NS", "BHARTIARTL.NS", "CIPLA.NS", "COALINDIA.NS", "DRREDDY.NS", "EICHERMOT.NS", "GRASIM.NS", "HCLTECH.NS", "HDFCBANK.NS", "HDFCLIFE.NS", "HINDALCO.NS", "HINDUNILVR.NS", "ICICIBANK.NS", "INDIGO.NS", "INFY.NS", "ITC.NS", "JIOFIN.NS", "JSWSTEEL.NS", "KOTAKBANK.NS", "LT.NS", "M&M.NS", "MARUTI.NS", "MAXHEALTH.NS", "NESTLEIND.NS", "NTPC.NS", "ONGC.NS", "POWERGRID.NS", "RELIANCE.NS", "SBILIFE.NS", "SHRIRAMFIN.NS", "SBIN.NS", "SUNPHARMA.NS", "TCS.NS", "TATACONSUM.NS", "TMPV.NS", "TATASTEEL.NS", "TECHM.NS", "TITAN.NS", "TRENT.NS", "ULTRACEMCO.NS", "WIPRO.NS"]
+
+NIFTY_NEXT_50 = ["ABB.NS", "AMBUJACEM.NS", "BANKBARODA.NS", "BPCL.NS", "CANBK.NS", "DLF.NS", "GAIL.NS", "HAL.NS", "HAVELLS.NS", "HINDZINC.NS", "IOC.NS", "LICINDIA.NS", "LTIM.NS", "PIDILITIND.NS", "TATAPOWER.NS", "UNITDSPR.NS", "VEDL.NS", "ZOMATO.NS", "DMART.NS", "VBL.NS", "ADANIGREEN.NS", "ADANIPOWER.NS", "DIVISLAB.NS", "IRFC.NS", "CHOLAFIN.NS", "GODREJCP.NS", "ICICIGI.NS", "JINDALSTEL.NS", "LODHA.NS", "MANKIND.NS", "PAGEIND.NS", "PIIND.NS", "PNB.NS", "RECLTD.NS", "MOTHERSON.NS", "SIEMENS.NS", "SRF.NS", "TVSMOTOR.NS", "ZYDUSLIFE.NS", "UNIONBANK.NS", "BOSCHLTD.NS", "CGPOWER.NS", "COLPAL.NS", "INDHOTEL.NS", "JSWENERGY.NS", "LUPIN.NS", "MUTHOOTFIN.NS", "POLICYBZR.NS", "POLYCAB.NS"]
+
+MIDCAP_PT1 = ["MUTHOOTFIN.NS", "UNIONBANK.NS", "INDUSTOWER.NS", "BSE.NS", "IDEA.NS", "CUMMINSIND.NS", "HDFCAMC.NS", "ASHOKLEY.NS", "IDBI.NS", "INDIANB.NS", "POLYCAB.NS", "HEROMOTOCO.NS", "LUPIN.NS", "POWERINDIA.NS", "GMRAIRPORT.NS", "MARICO.NS", "HINDPETRO.NS", "ICICIPRULI.NS", "SWIGGY.NS", "GVT&D.NS", "DABUR.NS", "WAAREEENER.NS", "BHEL.NS", "ABCAPITAL.NS", "PERSISTENT.NS", "MANKIND.NS", "SRF.NS", "BHARTIHEXA.NS", "BHARATFORG.NS", "POLICYBZR.NS", "NYKAA.NS", "NHPC.NS", "AUBANK.NS", "OIL.NS", "TORNTPOWER.NS", "BANKINDIA.NS", "SBICARD.NS", "INDUSINDBK.NS", "PAYTM.NS", "UNOMINDA.NS", "LTF.NS", "FEDERALBNK.NS", "IDFCFIRSTB.NS", "NMDC.NS", "DIXON.NS", "FORTIS.NS", "GICRE.NS", "COROMANDEL.NS", "IOB.NS", "AUROPHARMA.NS"]
+
+MIDCAP_PT2 = ["SAIL.NS", "YESBANK.NS", "PRESTIGE.NS", "LLOYDSME.NS", "ALKEM.NS", "RVNL.NS", "NATIONALUM.NS", "MRF.NS", "MAXF.NS", "JSL.NS", "SUZLON.NS", "APLAPOLLO.NS", "PHOENIXLTD.NS", "BIOCON.NS", "UPL.NS", "SCHAEFFLER.NS", "LINDEINDIA.NS", "SUNDARMFIN.NS", "NAM-INDIA.NS", "OFSS.NS", "COLPAL.NS", "ATGL.NS", "PATANJALI.NS", "GLENMARK.NS", "OBEROIRLTY.NS", "ABBOTINDIA.NS", "GODREJPROP.NS", "JSWINFRA.NS", "BERGEPAINT.NS", "FACT.NS", "M&MFIN.NS", "BALKRISIND.NS", "VOLTAS.NS", "MAHABANK.NS", "IRCTC.NS", "TIINDIA.NS", "SUPREMEIND.NS", "PIIND.NS", "TATACOMM.NS", "MOTILALOFS.NS", "MPHASIS.NS", "COFORGE.NS", "360ONE.NS", "BDL.NS", "GSK.NS", "KEI.NS", "PETRONET.NS", "JKCEMENT.NS", "KALYANKJIL.NS", "UBL.NS"]
+
+MIDCAP_PT3 = ["ASTRAL.NS", "BLUESTARCO.NS", "DALBHARAT.NS", "ESCORTS.NS", "3MINDIA.NS", "HUDCO.NS", "COCHINSHIP.NS", "APARINDS.NS", "PGHH.NS", "CONCOR.NS", "IPCALAB.NS", "PAGEIND.NS", "GUJFLUORO.NS", "LTTS.NS", "AJANTPHARM.NS", "AIAENG.NS", "NLCINDIA.NS", "UCOBANK.NS", "JUBLFOOD.NS", "ENDURANCE.NS", "IREDA.NS", "PREMIER.NS", "THERMAX.NS", "SONACOMS.NS", "GODREJIND.NS", "CRISIL.NS", "GODFRYPHLP.NS", "TATAINVEST.NS", "KPRMILL.NS", "APOLLOTYRE.NS", "ACC.NS", "MEDANTA.NS", "SJVN.NS", "TATAELXSI.NS", "GUJGASLTD.NS", "EXIDEIND.NS", "LICHSGFIN.NS", "HONAUT.NS", "IRB.NS", "AWL.NS", "NIACL.NS", "TATATECH.NS", "KPITTECH.NS", "IGL.NS", "DEEPAKNTR.NS", "SYNGENE.NS"]
+
+PORTFOLIO = [
+    "ITC.NS", "TCS.NS", "CHAMBLFERT.NS", "HAL.NS", "BHARATCOAL.NS",
+    "TATATECH.NS", "NMDC.NS", "SJVN.NS", "JIOFIN.NS", "VBL.NS",
+    "WIPRO.NS", "NLCINDIA.NS", "HINDCOPPER.NS", "DEVYANI.NS", "RECLTD.NS",
+    "NHPC.NS", "DELTACORP.NS", "OLAELEC.NS", "DHAMPURSUG.NS", "IOC.NS",
+    "ADANIGREEN.NS", "HAPPSTMNDS.NS", "BEL.NS", "ICICIPRULI.NS",
+    "EASEMYTRIP.NS", "OLECTRA.NS", "JSWINFRA.NS", "AVALON.NS",
+    "MARICO.NS", "WAAREEENER.NS",
+    "ANGELONE.NS", "ASIANPAINT.NS", "DIXON.NS", "EDELWEISS.NS",
+    "EQUITASBNK.NS", "GOLDIETF-E.NS", "HDFCBANK.NS", "HEROMOTOCO.NS",
+    "IRCTC.NS", "IRFC.NS", "KALPATARU.NS", "NORTHARC.NS", "NTPC.NS",
+    "ONGC.NS", "RVNL.NS", "TATAPOWER.NS", "TITAGARH.NS", "TITAN.NS",
+    "TMCV.NS", "TMPV.NS",
+]
+
+
+def _dedupe(*lists: list[str]) -> list[str]:
+    seen: dict[str, None] = {}
+    for lst in lists:
+        for t in lst:
+            seen.setdefault(t, None)
+    return list(seen)
+
+
+CATEGORIES: dict[str, list[str]] = {
+    "Nifty 50": NIFTY_50,
+    "Nifty Next 50": NIFTY_NEXT_50,
+    "Midcap 150 (all parts)": _dedupe(MIDCAP_PT1, MIDCAP_PT2, MIDCAP_PT3),
+    "Midcap Part 1": MIDCAP_PT1,
+    "Midcap Part 2": MIDCAP_PT2,
+    "Midcap Part 3": MIDCAP_PT3,
+    "My Portfolio": PORTFOLIO,
+}
+
+# Short names for Excel sheet tabs (31-char limit)
+SHORT_NAMES = {
+    "Nifty 50": "Nifty50",
+    "Nifty Next 50": "Next50",
+    "Midcap 150 (all parts)": "Midcap150",
+    "Midcap Part 1": "Midcap1",
+    "Midcap Part 2": "Midcap2",
+    "Midcap Part 3": "Midcap3",
+    "My Portfolio": "Portfolio",
+}
+
+# Symbols that were renamed on NSE: list name -> Yahoo symbol actually downloaded
+ALIASES = {
+    "ZOMATO.NS": "ETERNAL.NS",     # Zomato Ltd renamed to Eternal Ltd (2025)
+    "LICINDIA.NS": "LICI.NS",      # LIC's NSE symbol is LICI
+    "MAXF.NS": "MFSL.NS",          # Max Financial Services
+    "PREMIER.NS": "PREMIERENE.NS",  # Premier Energies (PREMIER.NS is a different ₹3 stock)
+    "GOLDIETF-E.NS": "GOLDIETF.NS",  # Yahoo only lists the ETF as GOLDIETF
+    "LTIM.NS": "LTM.NS",            # LTIMindtree now quoted as LTM
+    "GSK.NS": "GLAXO.NS",           # GlaxoSmithKline Pharma's NSE symbol
+    "GUJFLUORO.NS": "FLUOROCHEM.NS",  # Gujarat Fluorochemicals' NSE symbol
+    "ICICIPRULI.NS": "ICICILIFE.NS",  # ICICI Prudential Life renamed ICICI Life Insurance (2026)
+}
+
+
+def yahoo_symbol(ticker: str) -> str:
+    return ALIASES.get(ticker, ticker)
+
+
+def display_name(ticker: str) -> str:
+    return ticker.replace(".NS", "")
+
+
+def all_tickers() -> list[str]:
+    return _dedupe(*CATEGORIES.values())

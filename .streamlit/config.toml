@@ -1,0 +1,10 @@
+# Accent colour that matches the charts. Separate light/dark entries keep
+# Streamlit following your system's light or dark mode.
+[theme.light]
+primaryColor = "#257de0"
+
+[theme.dark]
+primaryColor = "#338ced"
+
+[browser]
+gatherUsageStats = false

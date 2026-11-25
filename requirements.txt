@@ -1,0 +1,11 @@
+pandas>=2.0
+numpy>=1.24
+yfinance>=0.2.54
+python-dotenv>=1.0
+streamlit>=1.50
+plotly>=5.20
+xlsxwriter>=3.1
+requests>=2.31
+# Optional: Google Sheets push with a service_account.json
+gspread>=6.0
+google-auth>=2.20

@@ -1,0 +1,19 @@
+# Secrets — keep these on your machine only
+.env
+service_account.json
+.streamlit/secrets.toml
+
+# Generated data / reports
+data_cache/
+reports/
+*.xlsx
+~$*.xlsx
+
+# Python / editor noise
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+.pytest_cache/
